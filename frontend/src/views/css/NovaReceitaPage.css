@@ -1,0 +1,64 @@
+/* src/views/css/NovaReceitaPage.css */
+
+.nova-receita-container {
+    max-width: 1140px !important;
+    padding-top: 100px;
+}
+
+.nova-receita-container h2 {
+    color: var(--CastanhoPrincipal);
+    margin-bottom: 30px;
+    font-size: var(--TamanhoLetraMaior);
+}
+
+.categorias-container,
+.ingredientes-container,
+.passos-container {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid var(--VerdeClaro);
+    padding: 1rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.ingrediente-item,
+.passo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.passo-numero {
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+.form-label {
+    color: var(--CastanhoPrincipal);
+    font-weight: bold;
+}
+
+.form-control:focus {
+    border-color: var(--VerdePrincipal);
+    box-shadow: 0 0 0 0.2rem rgba(152, 166, 108, 0.25);
+}
+
+.btn-primary {
+    background-color: var(--VerdePrincipal);
+    border-color: var(--VerdePrincipal);
+}
+
+.btn-primary:hover {
+    background-color: var(--VerdeClaro);
+    border-color: var(--VerdeClaro);
+}
+
+.btn-link {
+    color: var(--CastanhoPrincipal);
+}
+
+.btn-link:hover {
+    color: var(--VerdePrincipal);
+}

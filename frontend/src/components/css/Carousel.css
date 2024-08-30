@@ -1,0 +1,73 @@
+.carousel-container {
+    max-width: 1140px !important;
+    height: 100%;
+    position: relative;
+    margin-top:20px
+}
+
+.carousel-caption {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel-caption h2 {
+    margin-bottom: 10px;
+    color: white;
+    font-size: var(--TamanhoLetraMaior);
+}
+
+.carousel-caption a {
+    color: white;
+    text-decoration: none;
+}
+
+.carousel-caption a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    top: 0;
+    left: 50%;
+    background-color: var(--VerdePrincipal);
+    transition: all 0.3s ease-in-out;
+}
+
+.carousel-caption a:hover {
+    color: var(--VerdePrincipal) !important;
+}
+
+.carousel-caption a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.recipe-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    font-size: var(--TamanhoLetraPequeno);
+}
+
+.recipe-info span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.recipe-info svg {
+    color: var(--VerdeClaro);
+}
+
+.comments, .rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating {
+    font-size: var(--TamanhoLetraExtra); 
+}

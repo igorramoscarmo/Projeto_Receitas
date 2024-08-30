@@ -1,0 +1,77 @@
+.recentes-container {
+    max-width: 1140px !important;
+    height: 100%;
+    position: relative;
+}
+
+.receitas-recentes-wrapper {
+    padding-top: 20px; /* Reduzimos o padding superior */
+}
+
+.receitas-recentes-wrapper h2 {
+    margin-bottom: 0; /* Remove a margem inferior do título */
+    font-size: var(--TamanhoLetraMaior);
+}
+
+
+.receita-row {
+    padding: 15px 0;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.receita-row.even {
+    background-color: var(--Fundo);
+}
+
+.receita-row.odd {
+    background-color: transparent;
+}
+
+.ver-mais-btn {
+    background-color: var(--VerdePrincipal) !important;
+    color: white;
+    border: none !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ver-mais-btn:hover {
+    background-color: var(--VerdeClaro) !important;
+}
+
+.ordenacao-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.ordenacao-container span {
+    margin-right: 10px;
+}
+
+.ordenacao-container button {
+    padding: 5px;
+    color: var(--CastanhoPrincipal);
+}
+
+.ordenacao-container button.active {
+    color: var(--VerdePrincipal);
+}
+
+.ordenacao-container button:hover {
+    color: var(--VerdeClaro);
+}
+
+@media (max-width: 768px) {
+    .receita-row {
+        padding: 15px 0;
+        margin-bottom: 15px;
+    }
+    .ordenacao-container {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}

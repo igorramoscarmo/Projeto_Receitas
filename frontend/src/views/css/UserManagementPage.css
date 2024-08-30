@@ -1,0 +1,56 @@
+/* src/views/css/UserManagementPage.css */
+
+.users-wrapper {
+    padding-top: 100px;
+}
+
+.user-management-container {
+    max-width: 1140px !important;
+    height: 100%;
+    position: relative;
+}
+
+.user-management-container h2 {
+    color: var(--CastanhoPrincipal);
+    margin-bottom: 30px;
+    font-size: var(--TamanhoLetraMaior);
+}
+
+.table {
+    background-color: white;
+    border: 1px solid var(--VerdeHighlight) !important;
+}
+
+.table th {
+    background-color: var(--VerdePrincipal) !important;
+    color: white !important;
+    cursor: pointer;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: var(--VerdeHighlight) !important;
+}
+
+.action-icon {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.action-icon:hover {
+    opacity: 0.7;
+}
+
+.current-user {
+    font-weight: bold;
+}
+
+.action-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-icon {
+    margin: 0 5px;
+    cursor: pointer;
+}

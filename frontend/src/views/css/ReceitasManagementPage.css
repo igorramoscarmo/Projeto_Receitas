@@ -1,0 +1,173 @@
+/* src/views/css/ReceitasManagementPage.css */
+
+/* Containers */
+.receitas-wrapper {
+    padding-top: 100px;
+}
+
+.receitas-management-container {
+    max-width: 1140px !important;
+    height: 100%;
+    position: relative;
+}
+
+.categorias-container {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid var(--VerdeClaro);
+    padding: 1rem;
+    border-radius: 0.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.categorias-container > div {
+    flex-basis: calc(33.333% - 0.5rem);
+}
+
+.categoria-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.categoria-nome {
+    margin-left: 0.5rem;
+    flex-grow: 1;
+}
+
+/* Headers */
+.receitas-management-container h2,
+.edit-receita-form h3 {
+    color: var(--CastanhoPrincipal);
+    margin-bottom: 30px;
+    font-size: var(--TamanhoLetraMaior);
+}
+
+/* Forms */
+.edit-receita-form {
+    background-color: var(--Fundo);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.edit-receita-form .form-label {
+    font-weight: bold;
+    color: var(--CastanhoPrincipal);
+}
+
+.edit-receita-form .form-control {
+    border-color: var(--VerdeClaro);
+}
+
+.edit-receita-form .form-control:focus {
+    border-color: var(--VerdePrincipal);
+    box-shadow: 0 0 0 0.2rem rgba(152, 166, 108, 0.25);
+}
+
+.texto-pequeno {
+    font-size: var(--TamanhoLetraPequeno);
+
+}
+
+/* Tables */
+.table {
+    background-color: white;
+    border: 1px solid var(--VerdeHighlight) !important;
+}
+
+.table th {
+    background-color: var(--VerdePrincipal) !important;
+    color: white !important;
+    cursor: pointer;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: var(--VerdeHighlight) !important;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+/* Buttons */
+.btn-primary, .btn-secondary {
+    background-color: var(--VerdePrincipal) !important;
+    border-color: var(--VerdePrincipal) !important;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-family: "muli", sans-serif;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: var(--VerdeClaro) !important;
+    border-color: var(--VerdeClaro) !important;
+    color: white;
+}
+
+.btn-link {
+    color: var(--CastanhoPrincipal) !important;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    color: var(--VerdePrincipal) !important;
+    text-decoration: underline;
+}
+
+.categoria-item .form-check-input {
+    border-color: var(--VerdePrincipal);
+}
+
+.categoria-item .form-check-input:checked {
+    background-color: var(--VerdePrincipal);
+    border-color: var(--VerdePrincipal);
+}
+
+.categoria-item .form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(152, 166, 108, 0.25);
+    border-color: var(--VerdePrincipal);
+}
+
+/* Icons */
+.action-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-icon {
+    cursor: pointer;
+    margin-right: 0.5rem;
+    transition: color 0.3s ease;
+    color: var(--CastanhoPrincipal);
+}
+
+.action-icon:hover {
+    color: var(--VerdePrincipal);
+}
+
+.fa-eye, .fa-eye-slash {
+    color: var(--CastanhoPrincipal);
+}
+
+.fa-pencil-alt, .fa-edit, .categoria-remove {
+    color: var(--CastanhoPrincipal);
+}
+
+.fa-trash {
+    color: var(--CastanhoPrincipal);
+}
+
+.fa-eye:hover, .fa-eye-slash:hover,
+.fa-pencil-alt:hover, .fa-edit:hover,
+.categoria-remove:hover,
+.fa-trash:hover {
+    color: var(--VerdePrincipal);
+}
+
+

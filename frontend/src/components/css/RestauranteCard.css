@@ -1,0 +1,14 @@
+.restaurante-card {
+    margin-top: 20px;
+}
+
+.restaurante-logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 100px;
+    transition: transform 0.3s ease;
+}
+
+.restaurante-logo:hover {
+    transform: scale(1.1);
+}

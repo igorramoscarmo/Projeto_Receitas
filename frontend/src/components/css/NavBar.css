@@ -1,0 +1,117 @@
+.navbar {
+    background-color: var(--Fundo) !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 20px;
+    z-index: 1020;
+    font-size: var(--TamanhoLetraNormal);
+}
+
+.navbar-container {
+    max-width: 1140px !important;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    position: relative;
+    top: 40px;
+    z-index: 1060;
+}
+
+.logo-background {
+    background-color: var(--Fundo);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    height: 130px;
+    width: auto;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.nav-link {
+    color: var(--CastanhoPrincipal) !important;
+    padding: 0.5rem 1rem !important;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--VerdePrincipal);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: var(--VerdePrincipal) !important;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.auth-icons {
+    display: flex;
+    align-items: center;
+}
+
+.auth-icons .nav-link {
+    padding: 0.25rem !important;
+    margin: 0 0.25rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.modal-t {
+    font-size: var(--TamanhoLetraMaior);
+    color: var(--CastanhoPrincipal)
+}
+
+.user-name {
+    color: var(--CastanhoPrincipal);
+    margin-right: 0.5rem;
+    position: relative;
+    top: 2px;
+}
+
+
+
+@media (max-width: 767px) {
+    .logo {
+        height: 80px;
+    }
+
+    .logo-container {
+        position: relative;
+        top: -20px;
+        z-index: 1060;
+    }
+
+    .auth-icons {
+        position: relative;
+        bottom: 40px;
+    }
+    .user-name {
+        display: none;
+    }
+
+    
+}

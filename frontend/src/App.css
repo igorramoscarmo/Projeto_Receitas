@@ -1,0 +1,77 @@
+:root {
+  /* Cores */
+  --VerdePrincipal: #98a66c;
+  --CastanhoPrincipal: #534c42;
+  --VerdeClaro: #aebca1;
+  --CastanhoClaro: #92867b;
+  --VerdeHighlight: #f0f4db;
+  --CastanhoHighlight: #96918b;
+  --Fundo: #f3f0ec;
+
+  /* Tamanhos Letra */
+  --TamanhoLetraPequeno: 0.8rem;
+  --TamanhoLetraNormal: 1rem;
+  --TamanhoLetraExtra: 1.2rem;
+  --TamanhoLetraGrande: 1.3rem;
+  --TamanhoLetraMaior: 1.7rem;
+}
+
+
+.texto-light {
+  font-family: "muli", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.texto-light-italic {
+  font-family: "muli", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.texto-normal {
+  font-family: "muli", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.texto-normal-italic {
+  font-family: "muli", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.texto-bold {
+  font-family: "muli", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.texto-bold-italic {
+  font-family: "muli", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.texto-extra-bold {
+  font-family: "muli", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.texto-extra-bold-italic {
+  font-family: "muli", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.pattern-header {
+  background-image: url('../public/assets/patter_smaller.png');
+  background-repeat: repeat-x;
+  height: 20px; /* Ajuste conforme a altura do seu padrão */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1030;
+}

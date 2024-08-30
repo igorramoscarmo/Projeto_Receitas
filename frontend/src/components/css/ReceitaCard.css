@@ -1,0 +1,243 @@
+
+@import 'SharedStyles.css';
+
+.receita-card {
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+
+.receita-card .thumbnail-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.receita-card .receita-link {
+    position: relative;
+}
+
+.receita-card .receita-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.receita-card .thumbnail-container:hover .receita-overlay {
+    opacity: 1;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title a {
+    color: var(--CastanhoPrincipal);
+    text-decoration: none;
+}
+
+.card-title a:hover {
+    color: var(--VerdePrincipal);
+}
+
+.card-body h3 {
+    font-size: var(--TamanhoLetraGrande);
+    color: var(--CastanhoPrincipal);
+    margin-bottom: 10px;
+}
+
+.categorias {
+    margin-bottom: 10px;
+}
+
+.categoria-link {
+    margin-right: 10px;
+    color: var(--VerdePrincipal);
+    text-decoration: none;
+}
+
+.categoria-link:hover {
+    text-decoration: underline;
+}
+
+.card-text {
+    margin-bottom: 15px;
+}
+
+.restaurantes-sugeridos {
+    margin-bottom: 15px;
+    font-size: var(--TamanhoLetraNormal);
+}
+
+.restaurantes-sugeridos p {
+    color: var(--CastanhoPrincipal);
+    margin-bottom: 5px;
+}
+
+.restaurantes-sugeridos a {
+    color: var(--VerdePrincipal);
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.restaurantes-sugeridos a:hover {
+    text-decoration: underline;
+}
+
+.receita-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: var(--TamanhoLetraNormal);
+    color: var(--CastanhoClaro);
+}
+
+.recipe-rating,
+.recipe-comments {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.recipe-rating svg,
+.recipe-comments svg {
+    margin-right: 5px;
+    color: var(--VerdePrincipal);
+}
+
+.star-filled {
+    color: var(--VerdePrincipal);
+}
+
+.star-half {
+    color: var(--VerdePrincipal);
+}
+
+.star-empty {
+    color: #ccc;
+}
+
+.share-button {
+    background-color: var(--VerdePrincipal);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.share-button:hover {
+    background-color: var(--VerdeClaro);
+}
+
+.copy-message {
+    color: white;
+    margin-top: 10px;
+}
+
+.ver-mais-btn {
+    color: var(--VerdePrincipal);
+    border-color: var(--VerdePrincipal);
+}
+
+.ver-mais-btn:hover {
+    background-color: var(--VerdePrincipal);
+    color: white;
+}
+
+.parceiro-icon {
+    color: var(--VerdePrincipal);
+    font-size: var(--TamanhoLetraNormal);
+    margin-left: 3px;
+}
+
+.receita-badges {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.receita-badges .badge {
+    margin-bottom: 5px;
+}
+
+.favorite-icon {
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .receita-card .row {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .receita-card .receita-imagem {
+        width: 30%;
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+
+    .receita-card .receita-conteudo {
+        width: 70%;
+        flex: 0 0 70%;
+        max-width: 70%;
+    }
+
+    .receita-card .thumbnail {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .receita-card .card-body {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .receita-info > span {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .receita-card .thumbnail-container {
+        width: 100%;
+    }
+
+    .receita-card .receita-overlay {
+        width: 100%;
+    }
+
+    .receita-info {
+        justify-content: flex-start;
+        margin-top: 10px;
+        font-size: var(--TamanhoLetraPequeno);
+    }
+
+    .receita-info span {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+}

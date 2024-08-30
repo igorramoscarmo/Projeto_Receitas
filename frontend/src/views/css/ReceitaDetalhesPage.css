@@ -1,0 +1,105 @@
+.receita-detalhes-container {
+    max-width: 1140px !important;
+    margin: 1.2rem auto;
+}
+
+.receita-titulo {
+    color: var(--CastanhoPrincipal);
+    font-size: var(--TamanhoLetraMaior);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.receita-imagem {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.receita-descricao {
+    font-size: var(--TamanhoLetraNormal);
+    color: var(--CastanhoPrincipal);
+    margin-bottom: 1rem;
+}
+
+.receita-dificuldade {
+    font-size: var(--TamanhoLetraNormal);
+    margin-bottom: 1rem;
+}
+
+.receita-ingredientes {
+    margin-bottom: 2rem;
+}
+
+.receita-passo {
+    font-size: var(--TamanhoLetraNormal);
+    margin-bottom: 0.5rem;
+}
+
+.restaurantes-sugeridos {
+    background-color: var(--VerdeHighlight);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.dif {
+    background-color: var(--VerdePrincipal);
+}
+
+.restaurante-item {
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.restaurante-item.subscrito {
+    color: var(--CastanhoPrincipal);
+}
+
+.restaurante-logo {
+    max-width: 100px;
+    margin-bottom: 0.5rem;
+}
+
+.restaurante-nome {
+    font-size: var(--TamanhoLetraNormal);
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.restaurante-link {
+    color: var(--VerdePrincipal);
+    text-decoration: none;
+    font-size: var(--TamanhoLetraPequeno);
+}
+
+.restaurante-item.subscrito .restaurante-link {
+    color: var(--CastanhoPrincipal);
+}
+
+.restaurante-link:hover {
+    text-decoration: underline;
+    color: var(--VerdePrincipal);
+}
+
+.avaliacao-stars {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.avaliacao-stars span {
+    margin: 0 0.25rem;
+}
+
+.receita-detalhes-container h3 {
+    color: var(--CastanhoPrincipal);
+    margin-bottom: 30px;
+    font-size: var(--TamanhoLetraMaior);
+}
+
+.receita-detalhes-container h4 {
+    color: var(--CastanhoPrincipal);
+    margin-bottom: 30px;
+    font-size: var(--TamanhoLetraGrande);
+}

@@ -1,0 +1,79 @@
+.search-container {
+    max-width: 1140px !important;
+    height: 100%;
+    position: relative;
+}
+
+.search-section {
+    background-image: url('../../../public/assets/patter_larger.png');
+    background-repeat: repeat-x;
+    height: 121px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.search-input-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 15px 50px 15px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: var(--TamanhoLetraNormal);
+    color: var(--VerdePrincipal);
+}
+
+.search-input:focus {
+    outline: none !important;
+    border: 1px solid var(--VerdePrincipal);
+    box-shadow: 0 0 10px var(--CastanhoPrincipal);
+}
+
+.search-input::placeholder {
+    color: var(--VerdeClaro);
+    opacity: 0.7;
+}
+
+.search-button {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.search-button svg {
+    color: var(--CastanhoPrincipal);
+    font-size: 20px;
+}
+
+.search-button:hover svg {
+    color: var(--VerdePrincipal);
+}
+
+@media (max-width: 767px) {
+    .search-input-wrapper {
+        max-width: 80%;
+    }
+    .search-input {
+        position: relative;
+        top: 10px;
+    }
+    .search-button {
+        top: 65%;
+    }
+}

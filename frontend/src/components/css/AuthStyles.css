@@ -1,0 +1,86 @@
+.auth-icons {
+    display: flex;
+    align-items: center;
+}
+
+.auth-icons .nav-link {
+    padding: 0.25rem !important; 
+    margin: 0 0.25rem; 
+}
+
+.auth-form {
+    padding: 20px;
+    background-color: var(--Fundo);
+    border-radius: 8px;
+}
+
+.auth-form h2 {
+    color: var(--CastanhoPrincipal);
+    font-size: var(--TamanhoLetraMaior);
+    margin-bottom: 20px;
+}
+
+.auth-form .form-group {
+    margin-bottom: 1.5rem; 
+}
+
+.auth-form .form-label {
+    color: var(--CastanhoPrincipal);
+    font-family: "muli", sans-serif;
+    font-weight: 700;
+    margin-top: 0.75rem; 
+    margin-bottom: 0.5rem; /* Mantém um espaço adequado abaixo das labels */
+}
+
+.auth-form .form-group:first-child .form-label {
+    margin-top: 0; /* Remove o espaço extra acima da primeira label */
+}
+
+.auth-form .form-control {
+    border-color: var(--VerdeClaro);
+}
+
+.auth-form .form-control:focus {
+    border-color: var(--VerdePrincipal);
+    box-shadow: 0 0 0 0.2rem rgba(152, 166, 108, 0.25);
+}
+
+.auth-form .form-group:last-of-type {
+    margin-bottom: 2rem; /* Aumenta o espaço entre o último input e o botão */
+}
+
+.auth-form .btn-primary {
+    background-color: var(--VerdePrincipal);
+    border-color: var(--VerdePrincipal);
+    font-family: "muli", sans-serif;
+    font-weight: 700;
+    margin-top: 1rem; /* Adiciona um pouco mais de espaço acima do botão */
+}
+
+.auth-form .btn-primary:hover {
+    background-color: var(--VerdeClaro);
+    border-color: var(--VerdeClaro);
+}
+
+.auth-modal .modal-content {
+    background-color: var(--Fundo);
+}
+
+.auth-modal .modal-header {
+    border-bottom-color: var(--VerdeClaro);
+}
+
+.auth-modal .modal-title {
+    color: var(--CastanhoPrincipal);
+    font-family: "muli", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.auth-modal .close {
+    color: var(--CastanhoPrincipal);
+}
+
+.auth-modal .close:hover {
+    color: var(--VerdePrincipal);
+}
